@@ -7,8 +7,8 @@ public class Program
         CheckForPositiveNegativeZero(26); 
         FindMinimum(9, -3, 40);
         FindMaximum(2, 56, 32);
-        //IsDivisibleBy5(30);
-        //CheckEvenOrOdd(73);
+        IsDivisibleBy5(30);
+        CheckEvenOrOdd(72);
         CheckVowelOrConsonant('h');
         DisplayDayOfWeek(4);
     }
@@ -69,14 +69,28 @@ public class Program
         }
     }
 
-    public static void IsDivisibleBy5(int number) //not done
+    public static void IsDivisibleBy5(int number)
     {
-        
+        if (number % 5 == 0)
+        {
+            Console.WriteLine($"{number} is divisible by 5.");
+        }
+        else
+        {
+            Console.WriteLine($"{number} is not divisible by 5.");
+        }
     }
 
-    public static void CheckEvenOrOdd(int number) //not done
+    public static void CheckEvenOrOdd(int number)
     {
-        //figure out later
+        if (number % 2 == 0)
+        {
+            Console.WriteLine($"{number} is even.");
+        }
+        else
+        {
+            Console.WriteLine($"{number} is odd.");
+        }
     }
 
     public static void CheckVowelOrConsonant(char letter)
